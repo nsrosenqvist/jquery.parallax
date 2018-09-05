@@ -1,0 +1,29 @@
+{
+  "name": "jquery.parallax",
+  "title": "jQuery Parallax",
+  "description": "JavaScript library for parallax background images",
+  "version": "1.0.0",
+  "main": "jquery.parallax.js",
+  "homepage": "https://github.com/nsrosenqvist/jquery.parallax/",
+  "author": {
+    "name": "Niklas Rosenqvist",
+    "url": "https://www.nsrosenqvist.com/",
+    "email": "niklas.s.rosenqvist@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nsrosenqvist/jquery.parallax.git"
+  },
+  "keywords": [
+    "jquery",
+    "parallax",
+    "images",
+    "library"
+  ],
+  "bugs": {
+    "url": "https://github.com/nsrosenqvist/jquery.parallax/issues"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
