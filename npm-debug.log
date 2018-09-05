@@ -12,18 +12,18 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/home/niklas/Code/phulp/jquery.parallax',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /home/niklas/.npm/jquery.parallax/1.0.0/package.tgz not in flight; packing
-9 info lifecycle jquery.parallax@1.0.0~prepublish: jquery.parallax@1.0.0
-10 silly lifecycle jquery.parallax@1.0.0~prepublish: no script for prepublish, continuing
-11 verbose tar pack [ '/home/niklas/.npm/jquery.parallax/1.0.0/package.tgz',
+8 verbose addLocalDirectory /home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package.tgz not in flight; packing
+9 info lifecycle @nsrosenqvist/jquery.parallax@1.0.0~prepublish: @nsrosenqvist/jquery.parallax@1.0.0
+10 silly lifecycle @nsrosenqvist/jquery.parallax@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package.tgz',
 11 verbose tar pack   '/home/niklas/Code/phulp/jquery.parallax' ]
-12 verbose tarball /home/niklas/.npm/jquery.parallax/1.0.0/package.tgz
+12 verbose tarball /home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package.tgz
 13 verbose folder /home/niklas/Code/phulp/jquery.parallax
-14 verbose addLocalTarball adding from inside cache /home/niklas/.npm/jquery.parallax/1.0.0/package.tgz
-15 silly cache afterAdd jquery.parallax@1.0.0
-16 verbose afterAdd /home/niklas/.npm/jquery.parallax/1.0.0/package/package.json not in flight; writing
-17 verbose afterAdd /home/niklas/.npm/jquery.parallax/1.0.0/package/package.json written
-18 silly publish { name: 'jquery.parallax',
+14 verbose addLocalTarball adding from inside cache /home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package.tgz
+15 silly cache afterAdd @nsrosenqvist/jquery.parallax@1.0.0
+16 verbose afterAdd /home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package/package.json written
+18 silly publish { name: '@nsrosenqvist/jquery.parallax',
 18 silly publish   title: 'jQuery Parallax',
 18 silly publish   description: 'JavaScript library for parallax background images',
 18 silly publish   version: '1.0.0',
@@ -42,59 +42,61 @@
 18 silly publish   license: 'MIT',
 18 silly publish   dependencies: {},
 18 silly publish   devDependencies: {},
-18 silly publish   readme: 'jQuery Parallax\n===============\n\nA jQuery plugin to enable parallax background images. The code has been extracted\nfrom the [Materialize CSS](https://github.com/Dogfalo/materialize/) project and\nimproved upon.\n\n## Installation\n\n```bash\nnpm install jquery.parallax\n```\n\n## Usage\n\nInclude script then run `parallax()` on an element that contains the images.\n\n```js\n$(\'.hero\').parallax();\n```\n\n```html\n<div class="parallax-container">\n    <div class="parallax"><img src="images/parallax1.jpg"></div>\n</div>\n```\n\n```css\n.parallax-container {\n  position: relative;\n  overflow: hidden;\n  height: 500px;\n}\n\n.parallax {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: -1;\n}\n\n.parallax img {\n    display: none;\n    position: absolute;\n    left: 50%;\n    bottom: 0;\n    min-width: 100%;\n    min-height: 100%;\n    -webkit-transform: translate3d(0,0,0);\n            transform: translate3d(0,0,0);\n    transform: translateX(-50%);\n}\n```\n\nYou can easily create a slideshow by adding multiple `img` elements and rotate\nwith JavaScript.\n\n```js\n// Slideshow hero images\n$(\'.parallax-slideshow\').exists(function() {\n    var slideshow = $(this).children(\'.parallax\');\n    slideshow.children(\'*:gt(0)\').hide();\n\n    setInterval(function(){\n        slideshow.children().first().fadeOut(1000).next().fadeIn(1000).end().appendTo(slideshow);\n    }, 10000);\n});\n```\n\n## License\nMIT\n',
+18 silly publish   readme: 'jQuery Parallax\n===============\n\nA jQuery plugin to enable parallax background images. The code has been extracted\nfrom the [Materialize CSS](https://github.com/Dogfalo/materialize/) project and\nimproved upon.\n\n## Installation\n\n```bash\nnpm install @nsrosenqvist/jquery.parallax\n```\n\n## Usage\n\nInclude script then run `parallax()` on an element that contains the images.\n\n```js\n$(\'.hero\').parallax();\n```\n\n```html\n<div class="parallax-container">\n    <div class="parallax"><img src="images/parallax1.jpg"></div>\n</div>\n```\n\n```css\n.parallax-container {\n  position: relative;\n  overflow: hidden;\n  height: 500px;\n}\n\n.parallax {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: -1;\n}\n\n.parallax img {\n    display: none;\n    position: absolute;\n    left: 50%;\n    bottom: 0;\n    min-width: 100%;\n    min-height: 100%;\n    -webkit-transform: translate3d(0,0,0);\n            transform: translate3d(0,0,0);\n    transform: translateX(-50%);\n}\n```\n\nYou can easily create a slideshow by adding multiple `img` elements and rotate\nwith JavaScript.\n\n```js\n// Slideshow hero images\n$(\'.parallax-slideshow\').exists(function() {\n    var slideshow = $(this).children(\'.parallax\');\n    slideshow.children(\'*:gt(0)\').hide();\n\n    setInterval(function(){\n        slideshow.children().first().fadeOut(1000).next().fadeIn(1000).end().appendTo(slideshow);\n    }, 10000);\n});\n```\n\n## License\nMIT\n',
 18 silly publish   readmeFilename: 'README.md',
-18 silly publish   gitHead: '9a566445491e0612fd61e73ae7fe3f88b9056f9c',
-18 silly publish   _id: 'jquery.parallax@1.0.0',
+18 silly publish   gitHead: '54bfa07b37d9045a8a5f7349c53d7e9913068a89',
+18 silly publish   _id: '@nsrosenqvist/jquery.parallax@1.0.0',
 18 silly publish   scripts: {},
-18 silly publish   _shasum: '41add0c8931084e001fa9bc1b6aba73610c2e840',
+18 silly publish   _shasum: '32bba186f27f90945b4b0390422f7df1cb53234a',
 18 silly publish   _from: '.' }
 19 verbose getPublishConfig undefined
-20 silly mapToRegistry name jquery.parallax
-21 silly mapToRegistry using default registry
-22 silly mapToRegistry registry https://registry.npmjs.org/
-23 silly mapToRegistry uri https://registry.npmjs.org/jquery.parallax
-24 verbose publish registryBase https://registry.npmjs.org/
-25 silly publish uploading /home/niklas/.npm/jquery.parallax/1.0.0/package.tgz
-26 verbose request uri https://registry.npmjs.org/jquery.parallax
-27 verbose request sending authorization for write operation
-28 info attempt registry request try #1 at 1:48:18 PM
-29 verbose request using bearer token for auth
-30 verbose request id ed1a72c71e56ec64
-31 http request PUT https://registry.npmjs.org/jquery.parallax
-32 http 403 https://registry.npmjs.org/jquery.parallax
-33 verbose headers { date: 'Wed, 05 Sep 2018 11:48:20 GMT',
-33 verbose headers   'content-type': 'application/json',
-33 verbose headers   'transfer-encoding': 'chunked',
-33 verbose headers   connection: 'keep-alive',
-33 verbose headers   'set-cookie':
-33 verbose headers    [ '__cfduid=d62373031b43c1ba7301060e345f2d1851536148099; expires=Thu, 05-Sep-19 11:48:19 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
-33 verbose headers   'cf-ray': '45587756a86c8697-ARN',
-33 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-33 verbose headers   vary: 'Accept-Encoding',
-33 verbose headers   server: 'cloudflare',
-33 verbose headers   'content-encoding': 'gzip' }
-34 verbose request invalidating /home/niklas/.npm/registry.npmjs.org/jquery.parallax on PUT
-35 error publish Failed PUT 403
-36 verbose stack Error: Package name too similar to existing packages; try renaming your package to '@nsrosenqvist/jquery.parallax' and publishing with 'npm publish --access=public' instead : jquery.parallax
-36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-36 verbose stack     at /usr/share/npm/node_modules/npm-registry-client/lib/request.js:178:7
-36 verbose stack     at Gunzip.onEnd (zlib.js:131:5)
-36 verbose stack     at emitNone (events.js:111:20)
-36 verbose stack     at Gunzip.emit (events.js:208:7)
-36 verbose stack     at endReadableNT (_stream_readable.js:1064:12)
-36 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
-36 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
-37 verbose statusCode 403
-38 verbose pkgid jquery.parallax
-39 verbose cwd /home/niklas/Code/phulp/jquery.parallax
-40 error Linux 4.15.0-33-generic
-41 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
-42 error node v8.10.0
-43 error npm  v3.5.2
-44 error code E403
-45 error Package name too similar to existing packages; try renaming your package to '@nsrosenqvist/jquery.parallax' and publishing with 'npm publish --access=public' instead : jquery.parallax
-46 error If you need help, you may report this error at:
-46 error     <https://github.com/npm/npm/issues>
-47 verbose exit [ 1, true ]
+20 silly mapToRegistry name @nsrosenqvist/jquery.parallax
+21 silly mapToRegistry scope (from package name) @nsrosenqvist
+22 verbose mapToRegistry no registry URL found in name for scope @nsrosenqvist
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@nsrosenqvist%2fjquery.parallax
+26 verbose publish registryBase https://registry.npmjs.org/
+27 silly publish uploading /home/niklas/.npm/@nsrosenqvist/jquery.parallax/1.0.0/package.tgz
+28 verbose request uri https://registry.npmjs.org/@nsrosenqvist%2fjquery.parallax
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 1:50:28 PM
+31 verbose request using bearer token for auth
+32 verbose request id 1d3dfd23b4d6a8d4
+33 http request PUT https://registry.npmjs.org/@nsrosenqvist%2fjquery.parallax
+34 http 402 https://registry.npmjs.org/@nsrosenqvist%2fjquery.parallax
+35 verbose headers { date: 'Wed, 05 Sep 2018 11:50:29 GMT',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'content-length': '49',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'set-cookie':
+35 verbose headers    [ '__cfduid=d66a3be596854965ad5f2aeb72a77bc7c1536148228; expires=Thu, 05-Sep-19 11:50:28 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+35 verbose headers   'cf-ray': '45587a7cce3f75e8-ARN',
+35 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+35 verbose headers   vary: 'Accept-Encoding',
+35 verbose headers   server: 'cloudflare' }
+36 verbose request invalidating /home/niklas/.npm/registry.npmjs.org/_40nsrosenqvist_252fjquery.parallax on PUT
+37 error publish Failed PUT 402
+38 verbose stack Error: You must sign up for private packages : @nsrosenqvist/jquery.parallax
+38 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+38 verbose stack     at emitTwo (events.js:126:13)
+38 verbose stack     at Request.emit (events.js:214:7)
+38 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+38 verbose stack     at emitOne (events.js:121:20)
+38 verbose stack     at Request.emit (events.js:211:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+39 verbose statusCode 402
+40 verbose pkgid @nsrosenqvist/jquery.parallax
+41 verbose cwd /home/niklas/Code/phulp/jquery.parallax
+42 error Linux 4.15.0-33-generic
+43 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+44 error node v8.10.0
+45 error npm  v3.5.2
+46 error code E402
+47 error You must sign up for private packages : @nsrosenqvist/jquery.parallax
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
