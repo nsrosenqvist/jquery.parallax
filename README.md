@@ -8,7 +8,7 @@ improved upon.
 ## Installation
 
 ```bash
-npm install jquery.parallax
+npm install @nsrosenqvist/jquery.parallax
 ```
 
 ## Usage

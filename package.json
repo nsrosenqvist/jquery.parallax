@@ -1,5 +1,5 @@
 {
-  "name": "jquery.parallax",
+  "name": "@nsrosenqvist/jquery.parallax",
   "title": "jQuery Parallax",
   "description": "JavaScript library for parallax background images",
   "version": "1.0.0",
